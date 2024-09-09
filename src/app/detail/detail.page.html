@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">detail</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+    <ion-col size="12" size-md="6" size-lg="6" >
+      <ion-card color="perpul-200" *ngIf="pro" >
+        <img [src]="pro.ImagesURL" alt="">
+        <ion-card-header>
+          <ion-card-title>{{ pro. name}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item>
+            {{ pro.price }}฿
+          </ion-item>
+          <ion-item>
+            {{ pro.detail }}
+          </ion-item>
+
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+</ion-content>
